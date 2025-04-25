@@ -13,7 +13,6 @@ int main(int argc, char** argv)
 	s.bind_socket(client_port);
 	s.connectt(server_port);
 	s.send_msg(*(argv + 1));
-//	s.reuse_port();
 	s.close_socket();
 	_exit(0);
 }
