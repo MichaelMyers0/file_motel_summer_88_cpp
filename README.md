@@ -1,0 +1,1 @@
+# file_motel_summer_88_cpp
