@@ -1,5 +1,9 @@
 CXX=g++
 CXXFLAGS=-Wall -Wextra -std=c++11 -fpermissive
-main:main.c
-	$(CXX) $(CXXFLAGS) -g $< -o $@
+net.o:net.c
+	$(CXX) $(CXXFLAGS) -g -c -O $< -o $@
+client:client.c net.o
+	$(CXX) $(CXXFLAGS) -g -O $^ -o $@
+server:server.c net.o
+	$(CXX) $(CXXFLAGS) -g -O $^ -o $@	
 
