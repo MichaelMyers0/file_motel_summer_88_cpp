@@ -9,7 +9,7 @@ int main(int argc, char** argv)
 	shared_ptr<vector<string>> vecs;
 	if (argc < 2)
 	{
-		fprintf(stderr, "ERROR: Provide a message\n");
+		fprintf(stderr, "ERROR: Provide a path\n");
 		exit(1);
 	}
 	s.creat_socket(AF_INET6, SOCK_STREAM);
